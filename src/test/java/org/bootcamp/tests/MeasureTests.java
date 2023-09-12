@@ -7,8 +7,8 @@ import org.bootcamp.Measure;
 public class MeasureTests {
     @Test
     public void shouldReturnTrueForEqualMeasures() {
-        Measure measure1 = new Measure(1.0); // 1 cm
-        Measure measure2 = new Measure(1.0); // 1 cm
+        Measure measure1 = new Measure(1.0);
+        Measure measure2 = new Measure(1.0);
 
         boolean result = measure1.isEqual(measure2);
         Assertions.assertTrue(result);
@@ -17,8 +17,8 @@ public class MeasureTests {
 
     @Test
     public void shouldReturnFalseForUnequalMeasures() {
-        Measure measure1 = new Measure(1.0); // 1 cm
-        Measure measure2 = new Measure(2.0); // 2 cm
+        Measure measure1 = new Measure(1.0);
+        Measure measure2 = new Measure(2.0);
 
         boolean result = measure1.isEqual(measure2);
         Assertions.assertFalse(result);
@@ -26,7 +26,7 @@ public class MeasureTests {
 
     @Test
     public void shouldReturnTrueForSameMeasures() {
-        Measure measure = new Measure(1.0); // 1 cm
+        Measure measure = new Measure(1.0);
 
         boolean result = measure.isSame(measure);
         Assertions.assertTrue(result);
@@ -34,8 +34,8 @@ public class MeasureTests {
 
     @Test
     public void shouldReturnFalseForDifferentMeasure() {
-        Measure measure1 = new Measure(1.0); // 1 cm
-        Measure measure2 = new Measure(1.0); // 2 cm
+        Measure measure1 = new Measure(1.0);
+        Measure measure2 = new Measure(1.0);
 
         boolean result = measure1.isSame(measure2);
         Assertions.assertFalse(result);
